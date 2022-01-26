@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>seq-of-</title>
+		<script src="libraries/p5.js"></script>
+		<!-- <script src="libraries/p5.sound.js"></script> -->
+		<script src="sketch.js"></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			canvas {
+				margin: auto;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -20%);
+			}
+			.notes{
+				position: absolute;
+				width: 100%;;
+				height: auto;
+				text-align: center;
+				margin-bottom: 20px;
+				
+			}
+			p{
+				line-height: 1;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="notes">
+		<H3>The Rules</H3>
+		<p>1. Any live cell with fewer than two live neighbor's dies, as if by under population.</p>
+		<p>2. Any live cell with two or three live neighbor's lives on to the next generation</p>
+		<p>3.  Any live cell with more than three live neighbor's dies, as if by overpopulation.</p>
+		<p>4. Any dead cell with exactly three live neighbor's becomes a live cell, as if by reproduction.
+		</p>
+		<p>Dead cell = 0 (black)  Live cell = 1 (white)</p>
+		<p></p>
+		</div>
+
+	</body>
+</html>
